@@ -1,0 +1,44 @@
+.add-dog-page {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.add-dog-page h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  color: #e56710;
+}
+
+.add-dog-page input,
+.add-dog-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.add-dog-page textarea {
+  height: 100px;
+  resize: none;
+}
+
+.add-dog-page button {
+  width: 100%;
+  padding: 12px;
+  background: #ff7a18;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-dog-page button:hover {
+  background: #e56710;
+}

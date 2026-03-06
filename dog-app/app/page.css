@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Sekuya&family=Yusei+Magic&display=swap');
+
+
+
+/* Container */
+.container {
+  width: 100%;
+  padding: 60px 0; /* remove side padding so video can be full width */
+  background-color: #fff3c5;
+}
+
+/* Section */
+.section-home {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* center text */
+  text-align: center;
+  padding: 0 20px; /* spacing for text only */
+}
+
+/* Heading */
+.section-home h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(98, 58, 5);
+  margin: 0 0 30px 0;   /* remove negative margin */
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Full-width video (stable version) */
+.video-intro {
+  width: 100%;
+ 
+  
+}
+
+.video-intro video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* Adoption Section */
+.adoption {
+  width: 100%;
+  max-width: 1000px;
+  margin: 60px auto;        /* space above & below */
+  padding: 60px 10px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+
+
+  background: linear-gradient(135deg, #f6d67a, #e6b94a);
+  border-radius: 60px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.adoption h2 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #6a3b04;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Paragraph */
+.adoption p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #6a3b04;
+  margin-bottom: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Button */
+.button-adopt-now {
+  padding: 14px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #efbf31, #a0670a);
+  color: #70330c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.button-adopt-now:hover {
+  transform: translateY(-4px);
+}
+
+.button-adopt-now:active {
+  transform: scale(0.96);
+}
+
+
+.added-section {
+  padding: 80px 30px;
+  text-align: center;
+  background: #c18338f2;
+}
+
+.added-section h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #ffffffcf;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Layout container */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.feature-card {
+  background: rgb(255, 255, 255);
+  padding: 30px 25px;
+  border-radius: 25px;
+  width: 250px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Rounded image */
+.feature-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #efbe35;
+}
+
+/* Text */
+.feature-card p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #555;
+}
+
+/* Signup Video Section */
+.signup-video {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3e19a, #ffeede);
+}
+
+/* Video Styling */
+.signup-video video {
+  width: 100%;
+  max-width: 1200px;   /* Makes it large but controlled */
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Subtle hover effect */
+.signup-video video:hover {
+  transform: scale(1.02);
+}
+
+/* FAQ Section */
+.faq-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 90px auto;
+  padding: 20px 10px;
+  text-align: center;
+  background: linear-gradient(135deg, #f8d577, #f2c460);
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* Main FAQ Title */
+.faq-section h3:first-child {
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 40px;
+  color: #70330c;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Questions */
+.faq-section h3:not(:first-child) {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #5f3904;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Answers */
+.faq-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #5f3904;
+  background: #f7e2a9;
+  padding: 20px 20px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Footer Main */
+.footer {
+  background: linear-gradient(135deg, #f2c460, #e6b94a);
+  color: #70330c;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: -100px;
+  
+}
+
+/* Footer Content Container */
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Brand Section */
+.footer-brand h2 {
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 350px;
+  color: #5f3904;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Contact Section */
+.footer-contact h4 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #5f3904;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(112, 51, 12, 0.2);
+  font-size: 15px;
+  color: #5f3904;
+}
+
+.heading-signup{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-size: 45;
+  text-align: center;
+  color:#5f3904;
+  text-decoration: dashed;
+}

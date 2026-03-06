@@ -1,0 +1,104 @@
+/* Full-page background wrapper */
+.sign-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  #fff3c5;
+  padding: 40px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Card */
+.sign-card {
+  background: #f5c765ec;
+  width: 100%;
+  max-width: 420px;
+  padding: 60px 45px;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* Paw badge */
+.sign-card::before {
+  
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+
+
+.sign-card label {
+  font-size: 19px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 6px;
+  display: block;
+  text-align: center;
+}
+
+.sign-card input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.sign-card input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+}
+
+.button-login {
+  width: 100%;
+  padding: 20px;
+  background: #f97316;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-top: 8px;
+}
+
+.btn:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+}
+
+
+
+.signup-link {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #f97316;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
