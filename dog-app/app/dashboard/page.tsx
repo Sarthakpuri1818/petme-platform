@@ -1,22 +1,16 @@
 import Link from "next/link";
 import "./dashboard.css";
-import Image from "next/image";
 import LogoutButton from "./logoutbutton";
+import { connectDB } from "@/app/databse/databse";
+import Dog from "@/app/models/dog";
 
-
-
-
+export const dynamic = "force-dynamic";
 
 async function getDogs() {
   try {
-  const res = await fetch("http://localhost:3000/api/dogs", {
-  cache: "no-store",
-});
-      
-   
-
-    const data = await res.json();
-    return data.dogs || [];
+    await connectDB();
+    const dogs = await Dog.find({}).lean();
+    return JSON.parse(JSON.stringify(dogs));
   } catch (error) {
     console.log("Error fetching dogs:", error);
     return [];
@@ -25,7 +19,6 @@ async function getDogs() {
 
 export default async function DashboardPage() {
   const dogs = await getDogs();
-
 
   return (
     <div className="dashboard">
@@ -36,16 +29,7 @@ export default async function DashboardPage() {
           Add Dog
         </Link>
 
-
         <LogoutButton />
-
-        {/* <Link href="/" className="add-btn" onClick={logout}>
-        Logout
-        
-        </Link> */}
-
-
-      
       </div>
 
       <div className="dog-container">
@@ -55,21 +39,17 @@ export default async function DashboardPage() {
           dogs.map((dog: any) => (
             <div key={dog._id} className="dog-card">
               <img
-                src={dog.imageUrl.trim() || "/dog-placeholder.png"}
+                src={dog.imageUrl?.trim() || "/dog-placeholder.png"}
                 alt={dog.name}
                 width={320}
                 height={220}
               />
 
               <h3>{dog.name}</h3>
-
               <p>{dog.breed}</p>
-
               <p>{dog.age} years old</p>
-
               <p>{dog.location}</p>
               <p>{dog.contact}</p>
-
               <p className="status">{dog.status}</p>
             </div>
           ))
