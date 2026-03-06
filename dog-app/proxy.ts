@@ -1,8 +1,8 @@
-// /middleware.ts
+
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export default function Proxy(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const token = request.cookies.get("token")?.value;
   const path = request.nextUrl.pathname;
 
